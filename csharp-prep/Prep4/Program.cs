@@ -30,14 +30,14 @@ class Program
         foreach (int numbers in userList)
         {
             sum += numbers;
-        
+
         }
         Console.WriteLine("The sum is:" + sum);
 
-    // now i will calculate the average. I understood that to have a decimal number as result,
-    // I must declare the variable as a float
+        // now i will calculate the average. I understood that to have a decimal number as result,
+        // I must declare the variable as a float
 
-        float average = ((float)sum )/ userList.Count;
+        float average = ((float)sum) / userList.Count;
 
         Console.WriteLine("The average is:" + average);
 
