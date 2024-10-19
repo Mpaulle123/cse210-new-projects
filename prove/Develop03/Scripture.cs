@@ -24,7 +24,11 @@ class Scripture
             {
                 break;
             }
-            Console.ReadLine();
+            string input = Console.ReadLine();
+            if (input.Equals("quit", StringComparison.OrdinalIgnoreCase)) 
+            {
+                break;
+            }
         }
 
         Console.WriteLine("All words have been hiden");
@@ -45,11 +49,6 @@ class Scripture
 
     private bool Stop()
     {
-        if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Q)
-        {
-            return false;
-        }
-
         int index = _words.ChooseRandomWord(_wordsOfVerse, _random);
         _wordsOfVerse[index] = "__";
         return true;
