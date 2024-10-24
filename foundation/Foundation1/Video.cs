@@ -6,9 +6,9 @@ class Video
     public string _author;
     public int _length;
 
-    List<Comments> _comments{ get; set;}
+    List<Comments> _comments { get; set; }
 
-    public Video( string title, int length , string author)
+    public Video(string title, int length, string author)
     {
         _title = title;
         _author = author;
@@ -25,7 +25,7 @@ class Video
     {
         _title = title;
     }
-    
+
     public string GetAuthor()
     {
         return _author;
@@ -60,9 +60,9 @@ class Video
         Console.WriteLine($"Title: {_title}");
         Console.WriteLine($"Length : {_length} seconds");
         Console.WriteLine($"Author : {_author}");
-        Console.WriteLine("Comments :");
+        Console.WriteLine("Comments ");
 
-        foreach(var comments in _comments)
+        foreach (var comments in _comments)
         {
             Console.WriteLine($"- {comments._name} : {comments._text}");
         }
