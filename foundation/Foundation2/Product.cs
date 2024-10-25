@@ -1,3 +1,5 @@
+using System.Security.Cryptography.X509Certificates;
+
 class Product
 {
     public string _productName{ get; private set;}
@@ -7,8 +9,13 @@ class Product
     public Product(string productName, string productId, double productPrice)
     {
         _productName = productName;
-        
+        _productId = productId;
+        _productPrice = productPrice;
+    }
 
+    public double TotalPrice(int quantity)
+    {
+        return _productPrice * quantity;
     }
 
 

@@ -4,4 +4,4 @@
 dotnet_style_require_accessibility_modifiers = never
 
 # IDE0210: Convert to top-level statements
-dotnet_diagnostic.IDE0210.severity = error
+dotnet_diagnostic.IDE0210.severity = none
