@@ -1,9 +1,9 @@
 class Activity
 {
-    public string _activityName{ get; private set; }
-    public string _description{ get; private set; }
-    public int _activityTime{ get; private set; }
-    public DateTime _date { get; set; }
+    protected string _activityName;
+    protected string _description;
+    protected int _activityTime;
+    protected DateTime _date;
 
     public Activity(string activityName, string description, int duration)
     {
@@ -50,7 +50,37 @@ class Activity
         Console.WriteLine($"Well done!!! The activity {_activityName} is finished. Keep it up!!!");
     }
 
-  
-
+    public string GetName()
+    {
+        return _activityName;
+    }
+    public void SetName(string activityName)
+    {
+        _activityName = activityName;
+    }
+    public string Getdescription()
+    {
+        return _description;
+    }
+    public void SetDescription(string description)
+    {
+        _description = description;
+    }
+    public int GetTime()
+    {
+        return _activityTime;
+    }
+    public void SetTime(int duration)
+    {
+        _activityTime = duration;
+    }
+    public DateTime GetDate()
+    {
+        return _date;
+    }
+    public void SetDate(DateTime date)
+    {
+        _date = date;
+    }
 
 }

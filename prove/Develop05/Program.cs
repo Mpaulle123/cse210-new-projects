@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-class Program
+class Program 
 {
     static void Main(string[] args)
     {
@@ -140,7 +140,7 @@ class Program
             foreach (var activity in activities)
             {
                 Console.WriteLine();
-                Console.WriteLine($"Date: {activity._date} \nActivity: {activity._activityName} \nDescription: {activity._description} \nDuration: {activity._activityTime} minutes.");
+                Console.WriteLine($"Date: {activity.GetTime()} \nActivity: {activity.GetName()} \nDescription: {activity.Getdescription} \nDuration: {activity.GetTime()} minutes.");
                 Console.WriteLine();
             }
         }
