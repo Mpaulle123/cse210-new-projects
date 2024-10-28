@@ -140,7 +140,7 @@ class Program
             foreach (var activity in activities)
             {
                 Console.WriteLine();
-                Console.WriteLine($"Date: {activity.GetTime()} \nActivity: {activity.GetName()} \nDescription: {activity.Getdescription} \nDuration: {activity.GetTime()} minutes.");
+                Console.WriteLine($"Date: {activity.GetDate()} \nActivity: {activity.GetName()} \nDescription: {activity.Getdescription()} \nDuration: {activity.GetTime()} minutes.");
                 Console.WriteLine();
             }
         }
