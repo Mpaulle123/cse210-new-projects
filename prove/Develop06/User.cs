@@ -27,7 +27,7 @@ class User
             string state;
             if (goals[i] is EternalGoal)
             {
-                state = "[∞]";
+                state = "[∞]"; // I added a infinite sign to mark it as eternal
             }
             else if (goals[i] is ChecklistGoal checklist && !checklist.GetCompletion())
             {

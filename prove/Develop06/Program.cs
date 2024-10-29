@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        User user = new User("Paulle");
-        Journal journal = new Journal(@"C:\Users\Paulle Mahouangou\Desktop\journal.txt");
+        User user = new User("Paulle"); // I added a User class to manage all the actions of the user
+        Journal journal = new Journal(@"C:\Users\Paulle Mahouangou\Desktop\journal.txt"); // i added a Journal class to manage all about the storing
 
         //load in the file when run
         journal.LoadFromFile();
